@@ -6,11 +6,11 @@
         private int height;
         private int depth;
 
-        public Cuboid(int width, int height, int depth3)
+        public Cuboid(int width, int height, int depth)
         {
             this.width = width;
             this.height = height;
-            this.depth = depth3;
+            this.depth = depth;
         }
 
         public double Area()
