@@ -1,11 +1,11 @@
 ﻿namespace Solid.InterfaceSegregation
 {
-    class Square : Shape
+    class Rectangle : Shape
     {
         private readonly int width;
         private readonly int height;
 
-        public Square(int width, int height)
+        public Rectangle(int width, int height)
         {
             this.width = width;
             this.height = height;

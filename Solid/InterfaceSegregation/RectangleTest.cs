@@ -2,26 +2,26 @@
 
 namespace Solid.InterfaceSegregation
 {
-    class SquareTest
+    class RectangleTest
     {
         [TestCase]
-        public void SquaresCanBeCreated()
+        public void RectanglesCanBeCreated()
         {
-            Shape s = new Square(2, 3);
+            Shape s = new Rectangle(2, 3);
         }
 
         [TestCase]
-        public void SquaresHaveWidthAndHeight()
+        public void RectanglesHaveWidthAndHeight()
         {
-            Shape s = new Square(2, 3);
+            Shape s = new Rectangle(2, 3);
             Assert.AreEqual(2, s.Width());
             Assert.AreEqual(3, s.Height());
         }
 
         [TestCase]
-        public void SquaresHaveArea()
+        public void RectanglesHaveArea()
         {
-            Shape s = new Square(2, 3);
+            Shape s = new Rectangle(2, 3);
             Assert.AreEqual(6, s.Area());
         }
     }
