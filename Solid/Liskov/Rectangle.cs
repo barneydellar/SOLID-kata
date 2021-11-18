@@ -2,9 +2,30 @@
 {
     class Rectangle
     {
-        public virtual int Width { get; set; }
-        public virtual int Height { get; set; }
+        private int width;
+        private int height;
 
-        public int Area => Width * Height;
+        public virtual int GetWidth()
+        {
+            return width;
+        }
+
+        public virtual void SetWidth(int value)
+        {
+            width = value;
+        }
+
+
+        public virtual int GetHeight()
+        {
+            return height;
+        }
+
+        public virtual void SetHeight(int value)
+        {
+            height = value;
+        }
+
+        public int Area => GetWidth() * GetHeight();
     }
 }

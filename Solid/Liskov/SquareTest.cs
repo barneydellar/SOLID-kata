@@ -14,8 +14,8 @@ namespace Solid.Liskov
         public void SquaresHaveNoSizeAtStartup()
         {
             Square s = new Square();
-            Assert.AreEqual(0, s.Width);
-            Assert.AreEqual(0, s.Height);
+            Assert.AreEqual(0, s.GetWidth());
+            Assert.AreEqual(0, s.GetHeight());
         }
 
         [TestCase]
@@ -29,26 +29,26 @@ namespace Solid.Liskov
         public void ICanSetTheWidthOfSquares()
         {
             Square s = new Square();
-            s.Width = 10;
-            Assert.AreEqual(10, s.Width);
-            Assert.AreEqual(10, s.Height);
+            s.SetWidth(10);
+            Assert.AreEqual(10, s.GetWidth());
+            Assert.AreEqual(10, s.GetHeight());
         }
 
         [TestCase]
         public void ICanSetTheHeightOfSquares()
         {
             Square s = new Square();
-            s.Height = 20;
-            Assert.AreEqual(20, s.Width);
-            Assert.AreEqual(20, s.Height);
+            s.SetHeight(20);
+            Assert.AreEqual(20, s.GetWidth());
+            Assert.AreEqual(20, s.GetHeight());
         }
 
         [TestCase]
         public void SquaresHaveAreaOfWidthByWidth()
         {
             Square s = new Square();
-            s.Height = 20;
-            s.Width = 10;
+            s.SetHeight(20);
+            s.SetWidth(10);
             Assert.AreEqual(10 * 10, s.Area);
         }
 
@@ -56,8 +56,8 @@ namespace Solid.Liskov
         public void SquaresHaveAreaOfHeightByHeight()
         {
             Square s = new Square();
-            s.Width = 10;
-            s.Height = 20;
+            s.SetWidth(10);
+            s.SetHeight(20);
             Assert.AreEqual(20 * 20, s.Area);
         }
     }

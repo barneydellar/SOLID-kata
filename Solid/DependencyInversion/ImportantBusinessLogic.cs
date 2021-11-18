@@ -4,17 +4,17 @@ namespace Solid.DependencyInversion
 {
     class ImportantBusinessLogic
     {
-        DatabaseAccess.MySQLConnection connection = new DatabaseAccess.MySQLConnection();
+        readonly DatabaseAccess.MySQLConnection connection = new DatabaseAccess.MySQLConnection();
 
-        internal object Connect()
+        public object Connect()
         {    
             return connection.connect();
         }
 
-        internal void Write(string v)
+        public void Write(string v)
         {
             connection.open();
-            connection.execute("ADD v");
+            connection.execute("ADD " + v);
             connection.close();
         }
     }

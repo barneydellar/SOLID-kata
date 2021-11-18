@@ -2,20 +2,18 @@
 
 namespace Solid.InterfaceSegregation
 {
-    class Rectangle : Shape
+    class Circle : Shape
     {
-        private readonly int width;
-        private readonly int height;
+        private readonly int radius;
 
-        public Rectangle(int width, int height)
+        public Circle(int radius)
         {
-            this.width = width;
-            this.height = height;
+            this.radius = radius;
         }
 
         public double Area()
         {
-            return Width() * Height();
+            return Math.Pow(radius, 2) * Math.PI;
         }
 
         public double Depth()
@@ -25,22 +23,22 @@ namespace Solid.InterfaceSegregation
 
         public double Height()
         {
-            return height;
+            return 0;
         }
 
         public double Radius()
         {
-            throw new NotImplementedException();
+            return radius;
         }
 
         public double Volume()
         {
-            return Width() * Height() * Depth();
+            throw new System.NotImplementedException();
         }
 
         public double Width()
         {
-            return width;
+            return 0;
         }
     }
 }

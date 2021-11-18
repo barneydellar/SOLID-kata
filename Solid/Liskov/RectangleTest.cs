@@ -16,8 +16,8 @@ namespace Solid.Liskov
         public void RectanglesHaveNoSizeAtStartup()
         {
             Rectangle r = RectangleFactory.Create();
-            Assert.AreEqual(0, r.Width);
-            Assert.AreEqual(0, r.Height);
+            Assert.AreEqual(0, r.GetWidth());
+            Assert.AreEqual(0, r.GetHeight());
         }
 
         [TestCase]
@@ -31,18 +31,18 @@ namespace Solid.Liskov
         public void ICanSetTheWidthAndHeightOfRectangles()
         {
             Rectangle r = RectangleFactory.Create();
-            r.Width = 10;
-            r.Height = 20;
-            Assert.AreEqual(10, r.Width);
-            Assert.AreEqual(20, r.Height);
+            r.SetWidth(10);
+            r.SetHeight(20);
+            Assert.AreEqual(10, r.GetWidth());
+            Assert.AreEqual(20, r.GetHeight());
         }
 
         [TestCase]
         public void RectanglesHaveAreaOfWidthByHeight()
         {
             Rectangle r = RectangleFactory.Create();
-            r.Width = 10;
-            r.Height = 20;
+            r.SetWidth(10);
+            r.SetHeight(20);
             Assert.AreEqual(10*20, r.Area);
         }
 
@@ -50,8 +50,8 @@ namespace Solid.Liskov
         public void RectanglesStillHaveAreaOfWidthByHeight()
         {
             Rectangle r = RectangleFactory.Create2();
-            r.Width = 10;
-            r.Height = 20;
+            r.SetWidth(10);
+            r.SetHeight(20);
             Assert.AreEqual(10 * 20, r.Area);
         }
     }

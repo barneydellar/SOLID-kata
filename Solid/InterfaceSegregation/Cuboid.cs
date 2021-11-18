@@ -2,9 +2,9 @@
 {
     class Cuboid : Shape
     {
-        private int width;
-        private int height;
-        private int depth;
+        private readonly int width;
+        private readonly int height;
+        private readonly int depth;
 
         public Cuboid(int width, int height, int depth)
         {

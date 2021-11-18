@@ -3,20 +3,16 @@
     // Squares are a special case of rectangles.
     class Square : Rectangle
     {
-        public override int Width
+        public override void SetWidth(int value)
         {
-            set
-            {
-                base.Width = value;
-                base.Height = value;
-            }
+            base.SetWidth(value);
+            base.SetHeight(value);
         }
-        public override int Height
+
+        public override void SetHeight(int value)
         {
-            set
-            {
-                Width = value;
-            }
+            base.SetWidth(value);
+            base.SetHeight(value);
         }
     }
 }
