@@ -1,14 +1,13 @@
-﻿namespace Solid.SingleResponsibility
-{
-    internal class Rectangle
-    {
-        public int Width;
-        public int Height;
+﻿namespace Solid.SingleResponsibility;
 
-        public Rectangle(int width, int height)
-        {
-            Width = width;
-            Height = height;
-        }
+internal class Rectangle
+{
+    public int Width;
+    public int Height;
+
+    public Rectangle(int width, int height)
+    {
+        Width = width;
+        Height = height;
     }
 }

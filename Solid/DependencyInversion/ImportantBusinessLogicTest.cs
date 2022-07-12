@@ -1,30 +1,29 @@
 ﻿using NUnit.Framework;
 
-namespace Solid.DependencyInversion
+namespace Solid.DependencyInversion;
+
+internal class ImportantBusinessLogicTest
 {
-    internal class ImportantBusinessLogicTest
+    [Test]
+    public void BusinessLogicCanBeCreated()
     {
-        [TestCase]
-        public void BusinessLogicCanBeCreated()
-        {
-            var logic = new ImportantBusinessLogic();
-        }
+        var logic = new ImportantBusinessLogic();
+    }
 
-        [TestCase]
-        public void BusinessLogicCanConnectToTheDb()
-        {
-            var logic = new ImportantBusinessLogic();
-            var connectionString = logic.Connect();
+    [Test]
+    public void BusinessLogicCanConnectToTheDb()
+    {
+        var logic = new ImportantBusinessLogic();
+        var connectionString = logic.Connect();
 
-            Assert.AreEqual("Database connection", connectionString);
-        }
+        Assert.AreEqual("Database connection", connectionString);
+    }
 
-        [TestCase]
-        public void BusinessLogicCanWriteToTheDb()
-        {
-            var logic = new ImportantBusinessLogic();
-            logic.Connect();
-            logic.Write("Hello");
-        }
+    [Test]
+    public void BusinessLogicCanWriteToTheDb()
+    {
+        var logic = new ImportantBusinessLogic();
+        logic.Connect();
+        logic.Write("Hello");
     }
 }
