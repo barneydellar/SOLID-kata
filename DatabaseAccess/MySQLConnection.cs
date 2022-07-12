@@ -3,22 +3,22 @@ using System;
 
 namespace DatabaseAccess
 {
-    public class MySQLConnection
+    public class MySqlConnection
     {
-        public String connect()
+        public string Connect()
         {
             return "Database connection";
         }
 
-        public void open()
+        public void Open()
         {
         }
 
-        public void execute(String s)
+        public void Execute(string s)
         {
         }
 
-        public void close()
+        public void Close()
         {
         }
     }

@@ -1,29 +1,29 @@
 ﻿namespace Solid.Liskov
 {
-    class Rectangle
+    internal class Rectangle
     {
-        private int width;
-        private int height;
+        private int _width;
+        private int _height;
 
-        public virtual int GetWidth()
+        public int GetWidth()
         {
-            return width;
+            return _width;
         }
 
         public virtual void SetWidth(int value)
         {
-            width = value;
+            _width = value;
         }
 
 
-        public virtual int GetHeight()
+        public int GetHeight()
         {
-            return height;
+            return _height;
         }
 
         public virtual void SetHeight(int value)
         {
-            height = value;
+            _height = value;
         }
 
         public int Area => GetWidth() * GetHeight();

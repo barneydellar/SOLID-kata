@@ -2,20 +2,20 @@
 
 namespace Solid.DependencyInversion
 {
-    class ImportantBusinessLogic
+    internal class ImportantBusinessLogic
     {
-        readonly DatabaseAccess.MySQLConnection connection = new DatabaseAccess.MySQLConnection();
+        private readonly DatabaseAccess.MySqlConnection _connection = new DatabaseAccess.MySqlConnection();
 
         public object Connect()
         {    
-            return connection.connect();
+            return _connection.Connect();
         }
 
         public void Write(string v)
         {
-            connection.open();
-            connection.execute("ADD " + v);
-            connection.close();
+            _connection.Open();
+            _connection.Execute("ADD " + v);
+            _connection.Close();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace Solid.Liskov
 {
     // Squares are a special case of rectangles.
-    class Square : Rectangle
+    internal class Square : Rectangle
     {
         public override void SetWidth(int value)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Solid.SingleResponsibility
 {
-    class Circle
+    internal class Circle
     {
         public int Radius;
 

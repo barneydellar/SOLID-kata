@@ -1,6 +1,6 @@
 ﻿namespace Solid.Liskov
 {
-    class RectangleFactory
+    internal class RectangleFactory
     {
         public static Rectangle Create()
         {

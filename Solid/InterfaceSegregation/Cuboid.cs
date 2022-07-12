@@ -1,31 +1,31 @@
 ﻿namespace Solid.InterfaceSegregation
 {
-    class Cuboid : Shape
+    internal class Cuboid : IShape
     {
-        private readonly int width;
-        private readonly int height;
-        private readonly int depth;
+        private readonly int _width;
+        private readonly int _height;
+        private readonly int _depth;
 
         public Cuboid(int width, int height, int depth)
         {
-            this.width = width;
-            this.height = height;
-            this.depth = depth;
+            _width = width;
+            _height = height;
+            _depth = depth;
         }
 
         public double Area()
         {
-            return 2 * (width*height + width*depth + depth*height) ;
+            return 2 * (_width*_height + _width*_depth + _depth*_height) ;
         }
 
         public double Depth()
         {
-            return depth;
+            return _depth;
         }
 
         public double Height()
         {
-            return height;
+            return _height;
         }
 
         public double Radius()
@@ -35,12 +35,12 @@
 
         public double Volume()
         {
-            return width * depth * height;
+            return _width * _depth * _height;
         }
 
         public double Width()
         {
-            return width;
+            return _width;
         }
     }
 }

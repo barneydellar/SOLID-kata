@@ -1,6 +1,6 @@
 ﻿namespace Solid.SingleResponsibility
 {
-    class Rectangle
+    internal class Rectangle
     {
         public int Width;
         public int Height;

@@ -1,6 +1,6 @@
 ﻿namespace Solid.InterfaceSegregation
 {
-    interface Shape
+    internal interface IShape
     {
         double Area();
         double Volume();

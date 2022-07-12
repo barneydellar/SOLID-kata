@@ -2,7 +2,7 @@
 
 namespace Solid.DependencyInversion
 {
-    class ImportantBusinessLogicTest
+    internal class ImportantBusinessLogicTest
     {
         [TestCase]
         public void BusinessLogicCanBeCreated()
@@ -11,7 +11,7 @@ namespace Solid.DependencyInversion
         }
 
         [TestCase]
-        public void BusinessLogicCanConnectToTheDB()
+        public void BusinessLogicCanConnectToTheDb()
         {
             var logic = new ImportantBusinessLogic();
             var connectionString = logic.Connect();
@@ -20,7 +20,7 @@ namespace Solid.DependencyInversion
         }
 
         [TestCase]
-        public void BusinessLogicCanWriteToTheDB()
+        public void BusinessLogicCanWriteToTheDb()
         {
             var logic = new ImportantBusinessLogic();
             logic.Connect();

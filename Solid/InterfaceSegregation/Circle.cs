@@ -2,18 +2,18 @@
 
 namespace Solid.InterfaceSegregation
 {
-    class Circle : Shape
+    internal class Circle : IShape
     {
-        private readonly int radius;
+        private readonly int _radius;
 
         public Circle(int radius)
         {
-            this.radius = radius;
+            _radius = radius;
         }
 
         public double Area()
         {
-            return Math.Pow(radius, 2) * Math.PI;
+            return Math.Pow(_radius, 2) * Math.PI;
         }
 
         public double Depth()
@@ -28,12 +28,12 @@ namespace Solid.InterfaceSegregation
 
         public double Radius()
         {
-            return radius;
+            return _radius;
         }
 
         public double Volume()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public double Width()

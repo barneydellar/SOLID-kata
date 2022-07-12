@@ -5,4 +5,4 @@ The business logic currently depends on the database access code. So any changes
 
 Add in interfaces to the business logic for the database access to use.
 
-And then look at Hexagonal Architechture.
+And then look at Hexagonal Architecture.

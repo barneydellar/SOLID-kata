@@ -2,18 +2,18 @@
 
 namespace Solid.InterfaceSegregation
 {
-    class Sphere : Shape
+    internal class Sphere : IShape
     {
-        private readonly int radius;
+        private readonly int _radius;
 
         public Sphere(int radius)
         {
-            this.radius = radius;
+            _radius = radius;
         }
 
         public double Area()
         {
-            return 4 * Math.Pow(radius, 2) * Math.PI;
+            return 4 * Math.Pow(_radius, 2) * Math.PI;
         }
 
         public double Depth()
@@ -28,12 +28,12 @@ namespace Solid.InterfaceSegregation
 
         public double Radius()
         {
-            return radius;
+            return _radius;
         }
 
         public double Volume()
         {
-            return 4.0/3.0 * Math.Pow(radius, 3) * Math.PI; ;
+            return 4.0/3.0 * Math.Pow(_radius, 3) * Math.PI; ;
         }
 
         public double Width()

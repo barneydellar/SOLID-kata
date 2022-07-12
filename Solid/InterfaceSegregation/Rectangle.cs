@@ -2,15 +2,15 @@
 
 namespace Solid.InterfaceSegregation
 {
-    class Rectangle : Shape
+    internal class Rectangle : IShape
     {
-        private readonly int width;
-        private readonly int height;
+        private readonly int _width;
+        private readonly int _height;
 
         public Rectangle(int width, int height)
         {
-            this.width = width;
-            this.height = height;
+            _width = width;
+            _height = height;
         }
 
         public double Area()
@@ -25,7 +25,7 @@ namespace Solid.InterfaceSegregation
 
         public double Height()
         {
-            return height;
+            return _height;
         }
 
         public double Radius()
@@ -40,7 +40,7 @@ namespace Solid.InterfaceSegregation
 
         public double Width()
         {
-            return width;
+            return _width;
         }
     }
 }
