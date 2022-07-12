@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Solid.DependencyInversion;
+﻿namespace Solid.DependencyInversion;
 
 internal class ImportantBusinessLogic
 {
