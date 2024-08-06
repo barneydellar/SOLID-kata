@@ -1,13 +1,7 @@
 ﻿namespace SingleResponsibilityPrinciple;
 
-internal class Rectangle
+internal class Rectangle(int width, int height)
 {
-    public int Width;
-    public int Height;
-
-    public Rectangle(int width, int height)
-    {
-        Width = width;
-        Height = height;
-    }
+    public readonly int Width = width;
+    public readonly int Height = height;
 }

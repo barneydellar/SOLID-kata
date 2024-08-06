@@ -9,7 +9,7 @@ public class RectangleTest
     [Test]
     public void RectanglesCanBeCreated()
     {
-        var r = RectangleFactory.Create();
+        _ = RectangleFactory.Create();
     }
 
     [Test]

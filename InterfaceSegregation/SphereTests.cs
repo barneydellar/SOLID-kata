@@ -7,7 +7,7 @@ internal class SphereTest
     [Test]
     public void SpheresCanBeCreated()
     {
-        IShape s = new Sphere(5);
+        _ = new Sphere(5);
     }
 
     [Test]

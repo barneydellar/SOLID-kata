@@ -7,7 +7,7 @@ internal class SquareTest
     [Test]
     public void SquaresCanBeCreated()
     {
-        var s = new Square();
+        _ = new Square();
     }
 
     [Test]

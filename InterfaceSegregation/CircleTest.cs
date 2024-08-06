@@ -7,7 +7,7 @@ internal class CircleTest
     [Test]
     public void CirclesCanBeCreated()
     {
-        IShape unused = new Circle(5);
+        _ = new Circle(5);
     }
 
     [Test]

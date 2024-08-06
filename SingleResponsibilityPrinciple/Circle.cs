@@ -1,11 +1,6 @@
 ﻿namespace SingleResponsibilityPrinciple;
 
-internal class Circle
+internal class Circle(int r)
 {
-    public int Radius;
-
-    public Circle(int r)
-    {
-        Radius = r;
-    }
+    public readonly int Radius = r;
 }

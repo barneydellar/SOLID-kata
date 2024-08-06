@@ -7,7 +7,7 @@ internal class CuboidTest
     [Test]
     public void CuboidCanBeCreated()
     {
-        IShape s = new Cuboid(2, 3, 4);
+        _ = new Cuboid(2, 3, 4);
     }
 
     [Test]
@@ -30,7 +30,7 @@ internal class CuboidTest
     public void CuboidsHaveArea()
     {
         IShape s = new Cuboid(2, 3, 4);
-        double expectedArea = 2 * ((2 * 3) + (2 * 4) + (3 * 4));
+        const double expectedArea = 2 * (2 * 3 + 2 * 4 + 3 * 4);
         Assert.That(s.Area(), Is.EqualTo(expectedArea));
     }
 }

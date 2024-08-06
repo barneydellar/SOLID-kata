@@ -7,7 +7,7 @@ internal class RectangleTest
     [Test]
     public void RectanglesCanBeCreated()
     {
-        IShape s = new Rectangle(2, 3);
+        _ = new Rectangle(2, 3);
     }
 
     [Test]
