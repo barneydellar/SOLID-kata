@@ -16,12 +16,13 @@ internal class AreaCalculator
     {
         var lines = new List<string>();
         foreach (var shape in _shapes) {
-            if (shape is Rectangle)
+            if (shape is Rectangle rectangle)
             {
-                lines.Add("Rectangle: " + (shape as Rectangle).Width * (shape as Rectangle).Height);
-            } else
+                lines.Add("Rectangle: " + rectangle.Width * rectangle.Height);
+            } 
+            else if (shape is Circle circle)
             {
-                lines.Add("Circle: " + Math.Pow((shape as Circle).Radius, 2) * Math.PI);
+                lines.Add("Circle: " + Math.Pow(circle.Radius, 2) * Math.PI);
             }
         }
         return string.Join('\n', lines);

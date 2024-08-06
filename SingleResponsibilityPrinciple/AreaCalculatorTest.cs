@@ -19,7 +19,7 @@ internal class AreaCalculatorTest
 
         var output = calculator.Areas();
 
-        Assert.AreEqual("Rectangle: " + (w*h), output);
+        Assert.That(output, Is.EqualTo("Rectangle: " + (w*h)));
     }
 
     [TestCase(5)]
@@ -30,7 +30,7 @@ internal class AreaCalculatorTest
 
         var output = calculator.Areas();
 
-        Assert.AreEqual("Circle: " + (r * r * Math.PI), output);
+        Assert.That(output, Is.EqualTo("Circle: " + (r * r * Math.PI)));
     }
 
     [Test]
@@ -43,7 +43,7 @@ internal class AreaCalculatorTest
 
         var lines = output.Split('\n');
 
-        Assert.AreEqual(2, lines.Length);
+        Assert.That(lines.Length, Is.EqualTo(2));
     }
 
     [Test]
@@ -58,9 +58,9 @@ internal class AreaCalculatorTest
         var output = calculator.Areas();
 
         var lines = output.Split('\n');
-        Assert.AreEqual("Circle: " + (5 * 5 * Math.PI), lines[0]);
-        Assert.AreEqual("Rectangle: " + (2 * 3), lines[1]);
-        Assert.AreEqual("Rectangle: " + (5 * 8), lines[2]);
-        Assert.AreEqual("Circle: " + (9 * 9 * Math.PI), lines[3]);
+        Assert.That(lines[0], Is.EqualTo("Circle: " + (5 * 5 * Math.PI)));
+        Assert.That(lines[1], Is.EqualTo("Rectangle: " + (2 * 3)));
+        Assert.That(lines[2], Is.EqualTo("Rectangle: " + (5 * 8)));
+        Assert.That(lines[3], Is.EqualTo("Circle: " + (9 * 9 * Math.PI)));
     }
 }
