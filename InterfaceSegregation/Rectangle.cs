@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Solid.InterfaceSegregation;
+﻿namespace InterfaceSegregation;
 
 internal class Rectangle : IShape
 {

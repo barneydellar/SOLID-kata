@@ -1,18 +1,11 @@
 ﻿namespace SingleResponsibilityPrinciple;
 
-internal class AreaCalculator
+internal class AreaCalculator(object[] shapes)
 {
-    private readonly object[] _shapes;
-
-    public AreaCalculator(object[] shapes)
-    {
-        _shapes = shapes;
-    }
-
     public string Areas()
     {
         var lines = new List<string>();
-        foreach (var shape in _shapes) {
+        foreach (var shape in shapes) {
             if (shape is Rectangle rectangle)
             {
                 lines.Add("Rectangle: " + rectangle.Width * rectangle.Height);

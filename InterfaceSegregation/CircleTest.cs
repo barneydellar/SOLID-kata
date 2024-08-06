@@ -1,14 +1,13 @@
 ﻿using NUnit.Framework;
-using System;
 
-namespace Solid.InterfaceSegregation;
+namespace InterfaceSegregation;
 
 internal class CircleTest
 {
     [Test]
     public void CirclesCanBeCreated()
     {
-        IShape s = new Circle(5);
+        IShape unused = new Circle(5);
     }
 
     [Test]

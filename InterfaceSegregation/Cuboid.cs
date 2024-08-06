@@ -1,4 +1,4 @@
-﻿namespace Solid.InterfaceSegregation;
+﻿namespace InterfaceSegregation;
 
 internal class Cuboid : IShape
 {

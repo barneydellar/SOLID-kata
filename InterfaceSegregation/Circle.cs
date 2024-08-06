@@ -1,19 +1,10 @@
-﻿using System;
+﻿namespace InterfaceSegregation;
 
-namespace Solid.InterfaceSegregation;
-
-internal class Circle : IShape
+internal class Circle(int radius) : IShape
 {
-    private readonly int _radius;
-
-    public Circle(int radius)
-    {
-        _radius = radius;
-    }
-
     public double Area()
     {
-        return Math.Pow(_radius, 2) * Math.PI;
+        return Math.Pow(radius, 2) * Math.PI;
     }
 
     public double Depth()
@@ -28,7 +19,7 @@ internal class Circle : IShape
 
     public double Radius()
     {
-        return _radius;
+        return radius;
     }
 
     public double Volume()

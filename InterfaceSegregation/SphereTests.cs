@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
-using System;
 
-namespace Solid.InterfaceSegregation;
+namespace InterfaceSegregation;
 
 internal class SphereTest
 {

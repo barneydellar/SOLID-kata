@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Solid.InterfaceSegregation;
+namespace InterfaceSegregation;
 
 internal class RectangleTest
 {
