@@ -1,4 +1,4 @@
-﻿namespace Solid.Liskov;
+﻿namespace Liskov.Liskov;
 
 // Squares are a special case of rectangles.
 internal class Square : Rectangle

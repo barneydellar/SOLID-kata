@@ -1,4 +1,4 @@
-﻿namespace Solid.Liskov;
+﻿namespace Liskov.Liskov;
 
 internal class RectangleFactory
 {

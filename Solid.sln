@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccess", "DatabaseA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple", "SingleResponsibilityPrinciple\SingleResponsibilityPrinciple.csproj", "{45655D81-7EF4-40FA-A553-F1B55A0750FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov", "Liskov\Liskov.csproj", "{B6CCC33E-3B38-4586-884F-3A534B5B5F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{45655D81-7EF4-40FA-A553-F1B55A0750FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45655D81-7EF4-40FA-A553-F1B55A0750FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45655D81-7EF4-40FA-A553-F1B55A0750FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

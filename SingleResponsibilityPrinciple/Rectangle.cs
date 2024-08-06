@@ -1,4 +1,4 @@
-﻿namespace Solid.SingleResponsibility;
+﻿namespace SingleResponsibilityPrinciple;
 
 internal class Rectangle
 {

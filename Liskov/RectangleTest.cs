@@ -2,7 +2,7 @@
 
 // Run the tests in the Test Explorer
 
-namespace Solid.Liskov;
+namespace Liskov.Liskov;
 
 public class RectangleTest
 {
@@ -16,15 +16,15 @@ public class RectangleTest
     public void RectanglesHaveNoSizeAtStartup()
     {
         var r = RectangleFactory.Create();
-        Assert.AreEqual(0, r.GetWidth());
-        Assert.AreEqual(0, r.GetHeight());
+        Assert.That(r.GetWidth(), Is.EqualTo(0));
+        Assert.That(r.GetHeight(), Is.EqualTo(0));
     }
 
     [Test]
     public void RectanglesHaveNoAreaAtStartup()
     {
         var r = RectangleFactory.Create();
-        Assert.AreEqual(0, r.Area);
+        Assert.That(r.Area, Is.EqualTo(0));
     }
 
     [Test]
@@ -33,8 +33,8 @@ public class RectangleTest
         var r = RectangleFactory.Create();
         r.SetWidth(10);
         r.SetHeight(20);
-        Assert.AreEqual(10, r.GetWidth());
-        Assert.AreEqual(20, r.GetHeight());
+        Assert.That(r.GetWidth(), Is.EqualTo(10));
+        Assert.That(r.GetHeight(), Is.EqualTo(20));
     }
 
     [Test]
@@ -43,7 +43,7 @@ public class RectangleTest
         var r = RectangleFactory.Create();
         r.SetWidth(10);
         r.SetHeight(20);
-        Assert.AreEqual(10*20, r.Area);
+        Assert.That(r.Area, Is.EqualTo(10*20));
     }
 
     //[Test]
@@ -52,6 +52,6 @@ public class RectangleTest
         var r = RectangleFactory.Create2();
         r.SetWidth(10);
         r.SetHeight(20);
-        Assert.AreEqual(10 * 20, r.Area);
+        Assert.That(r.Area, Is.EqualTo(10 * 20));
     }
 }

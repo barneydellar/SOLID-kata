@@ -1,7 +1,4 @@
-﻿using NUnit.Framework;
-using System;
-
-namespace Solid.SingleResponsibility;
+﻿namespace SingleResponsibilityPrinciple;
 
 internal class AreaCalculatorTest
 {

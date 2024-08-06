@@ -14,16 +14,16 @@ internal class CuboidTest
     public void CuboidsHaveWidthDepthAndHeight()
     {
         IShape s = new Cuboid(2, 3, 4);
-        Assert.AreEqual(2, s.Width());
-        Assert.AreEqual(3, s.Height());
-        Assert.AreEqual(4, s.Depth());
+        Assert.That(s.Width(), Is.EqualTo(2));
+        Assert.That(s.Height(), Is.EqualTo(3));
+        Assert.That(s.Depth(), Is.EqualTo(4));
     }
 
     [Test]
     public void CuboidsHaveVolume()
     {
         IShape s = new Cuboid(2, 3, 4);
-        Assert.AreEqual(2 * 3 * 4, s.Volume());
+        Assert.That(s.Volume(), Is.EqualTo(2 * 3 * 4));
     }
 
     [Test]
@@ -31,6 +31,6 @@ internal class CuboidTest
     {
         IShape s = new Cuboid(2, 3, 4);
         double expectedArea = 2 * ((2 * 3) + (2 * 4) + (3 * 4));
-        Assert.AreEqual(expectedArea, s.Area());
+        Assert.That(s.Area(), Is.EqualTo(expectedArea));
     }
 }

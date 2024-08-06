@@ -16,7 +16,7 @@ internal class ImportantBusinessLogicTest
         var logic = new ImportantBusinessLogic();
         var connectionString = logic.Connect();
 
-        Assert.AreEqual("Database connection", connectionString);
+        Assert.That(connectionString, Is.EqualTo("Database connection"));
     }
 
     [Test]

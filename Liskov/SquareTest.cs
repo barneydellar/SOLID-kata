@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Solid.Liskov;
+namespace Liskov.Liskov;
 
 internal class SquareTest
 {
@@ -14,15 +14,15 @@ internal class SquareTest
     public void SquaresHaveNoSizeAtStartup()
     {
         var s = new Square();
-        Assert.AreEqual(0, s.GetWidth());
-        Assert.AreEqual(0, s.GetHeight());
+        Assert.That(s.GetWidth(), Is.EqualTo(0));
+        Assert.That(s.GetHeight(), Is.EqualTo(0));
     }
 
     [Test]
     public void SquaresHaveNoAreaAtStartup()
     {
         var s = new Square();
-        Assert.AreEqual(0, s.Area);
+        Assert.That(s.Area, Is.EqualTo(0));
     }
 
     [Test]
@@ -30,8 +30,8 @@ internal class SquareTest
     {
         var s = new Square();
         s.SetWidth(10);
-        Assert.AreEqual(10, s.GetWidth());
-        Assert.AreEqual(10, s.GetHeight());
+        Assert.That(s.GetWidth(), Is.EqualTo(10));
+        Assert.That(s.GetHeight(), Is.EqualTo(10));
     }
 
     [Test]
@@ -39,8 +39,8 @@ internal class SquareTest
     {
         var s = new Square();
         s.SetHeight(20);
-        Assert.AreEqual(20, s.GetWidth());
-        Assert.AreEqual(20, s.GetHeight());
+        Assert.That(s.GetWidth(), Is.EqualTo(20));
+        Assert.That(s.GetHeight(), Is.EqualTo(20));
     }
 
     [Test]
@@ -49,7 +49,7 @@ internal class SquareTest
         var s = new Square();
         s.SetHeight(20);
         s.SetWidth(10);
-        Assert.AreEqual(10 * 10, s.Area);
+        Assert.That(s.Area, Is.EqualTo(10 * 10));
     }
 
     [Test]
@@ -58,6 +58,6 @@ internal class SquareTest
         var s = new Square();
         s.SetWidth(10);
         s.SetHeight(20);
-        Assert.AreEqual(20 * 20, s.Area);
+        Assert.That(s.Area, Is.EqualTo(20 * 20));
     }
 }

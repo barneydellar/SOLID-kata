@@ -15,13 +15,13 @@ internal class CircleTest
     public void CirclesHaveARadius()
     {
         IShape s = new Circle(5);
-        Assert.AreEqual(5, s.Radius());
+        Assert.That(s.Radius(), Is.EqualTo(5));
     }
 
     [Test]
     public void CirclesHaveArea()
     {
         IShape s = new Circle(5);
-        Assert.AreEqual(5 * 5 * Math.PI, s.Area());
+        Assert.That(s.Area(), Is.EqualTo(5 * 5 * Math.PI));
     }
 }

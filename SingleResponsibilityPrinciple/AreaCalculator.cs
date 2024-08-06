@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Solid.SingleResponsibility;
+﻿namespace SingleResponsibilityPrinciple;
 
 internal class AreaCalculator
 {
