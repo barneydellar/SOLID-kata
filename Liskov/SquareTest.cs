@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Liskov.Liskov;
+namespace Liskov;
 
 internal class SquareTest
 {

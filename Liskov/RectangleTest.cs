@@ -2,7 +2,7 @@
 
 // Run the tests in the Test Explorer
 
-namespace Liskov.Liskov;
+namespace Liskov;
 
 public class RectangleTest
 {

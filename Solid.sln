@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrincip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov", "Liskov\Liskov.csproj", "{B6CCC33E-3B38-4586-884F-3A534B5B5F46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation", "InterfaceSegregation\InterfaceSegregation.csproj", "{843ED48A-ABC8-4EF3-BC4C-D9F821AC3F4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6CCC33E-3B38-4586-884F-3A534B5B5F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843ED48A-ABC8-4EF3-BC4C-D9F821AC3F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843ED48A-ABC8-4EF3-BC4C-D9F821AC3F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843ED48A-ABC8-4EF3-BC4C-D9F821AC3F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843ED48A-ABC8-4EF3-BC4C-D9F821AC3F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

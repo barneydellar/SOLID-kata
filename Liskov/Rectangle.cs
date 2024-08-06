@@ -1,4 +1,4 @@
-﻿namespace Liskov.Liskov;
+﻿namespace Liskov;
 
 internal class Rectangle
 {
