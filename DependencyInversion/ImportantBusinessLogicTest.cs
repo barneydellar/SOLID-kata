@@ -1,13 +1,13 @@
 ﻿using NUnit.Framework;
 
-namespace Solid.DependencyInversion;
+namespace DependencyInversion;
 
 internal class ImportantBusinessLogicTest
 {
     [Test]
     public void BusinessLogicCanBeCreated()
     {
-        var logic = new ImportantBusinessLogic();
+        _ = new ImportantBusinessLogic();
     }
 
     [Test]

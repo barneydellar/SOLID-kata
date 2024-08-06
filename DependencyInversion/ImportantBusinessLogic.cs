@@ -1,4 +1,4 @@
-﻿namespace Solid.DependencyInversion;
+﻿namespace DependencyInversion;
 
 internal class ImportantBusinessLogic
 {
