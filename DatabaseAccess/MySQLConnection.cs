@@ -1,23 +1,22 @@
 ﻿
-namespace DatabaseAccess
+namespace DatabaseAccess;
+
+public class MySqlConnection
 {
-    public class MySqlConnection
+    public string Connect()
     {
-        public string Connect()
-        {
-            return "Database connection";
-        }
+        return "Database connection";
+    }
 
-        public void Open()
-        {
-        }
+    public void Open()
+    {
+    }
 
-        public void Execute(string s)
-        {
-        }
+    public void Execute(string s)
+    {
+    }
 
-        public void Close()
-        {
-        }
+    public void Close()
+    {
     }
 }

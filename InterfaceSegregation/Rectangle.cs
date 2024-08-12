@@ -1,16 +1,7 @@
 ﻿namespace InterfaceSegregation;
 
-internal class Rectangle : IShape
+internal class Rectangle(int width, int height) : IShape
 {
-    private readonly int _width;
-    private readonly int _height;
-
-    public Rectangle(int width, int height)
-    {
-        _width = width;
-        _height = height;
-    }
-
     public double Area()
     {
         return Width() * Height();
@@ -23,7 +14,7 @@ internal class Rectangle : IShape
 
     public double Height()
     {
-        return _height;
+        return height;
     }
 
     public double Radius()
@@ -38,6 +29,6 @@ internal class Rectangle : IShape
 
     public double Width()
     {
-        return _width;
+        return width;
     }
 }

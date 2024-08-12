@@ -2,7 +2,7 @@
 
 internal class ImportantBusinessLogic
 {
-    private readonly DatabaseAccess.MySqlConnection _connection = new DatabaseAccess.MySqlConnection();
+    private readonly DatabaseAccess.MySqlConnection _connection = new();
 
     public object Connect()
     {    
